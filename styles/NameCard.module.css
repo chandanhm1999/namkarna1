@@ -1,0 +1,51 @@
+/* NameCard.module.css */
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+    background-color: #fff; /* Optional: Set a background color for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.content {
+    flex: 1;
+    max-width: 60%;
+}
+  
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.content p {
+    font-size: 16px;
+    color: #777;
+}
+  
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Optional: Add border-radius for a rounded corner effect */
+}
+  
+/* Media queries for responsiveness */
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .content,
+    .imageContainer {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+}
+  
